@@ -1,16 +1,19 @@
-import StudentCard from "./components/studentcard.jsx";
-import SubjectCard from "./components/subject.jsx";
+import { BrowserRouter,Routes, Route} from "react-router-dom";
+import Home from "./pages/home.jsx";
+import Student from "./pages/student.jsx";
+import StudentDetails from "./pages/studentDetails.jsx";
+import Navbar from "./components/navbar.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <StudentCard name="Charles" age={23} studentNumber="202400926" course="Information Technologies" />
-      <StudentCard name="John Yevs Bryan" age={20} studentNumber="202404436" course="Information Technologies" />
-      <StudentCard name="Jhomer" age={21} studentNumber="202405742" course="Information Technologies" />
-
-      <SubjectCard subjectCode="DCIT 26" subjectName="Application and Development" schedule="Mon 5:30 PM - 7:00 PM, Tue 11:00 AM - 1:00 PM" />
-
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/student" element={<Student/>} />
+            <Route path="/student/:id" element={<StudentDetails />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
