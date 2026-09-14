@@ -1,12 +1,27 @@
 [
     {
         "id": 1,
-        "name": "John Doe",
+        "name": "Mark Harvey",
         "age": 20
     },    
     {
         "id": 2,
-        "name": "John Doe",
+        "name": "Arren Jade Lord",
+        "age": 21
+    },    
+    {
+        "id": 2,
+        "name": "John Yevs Bryan",
+        "age": 20
+    },    
+    {
+        "id": 2,
+        "name": "Charles",
+        "age": 23
+    },    
+    {
+        "id": 2,
+        "name": "Prince Geon Roi",
         "age": 20
     }
 
