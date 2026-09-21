@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "Charles",
+        "employeeID": "EMP001",
+        "department": "BSIT",
+        "specialization": "Web Development",
+        "sex": "Male"
+
+    },
+    {
+        "id": 2,
+        "name": "John",
+        "employeeId": "EMP002",
+        "department": "BSIT",
+        "specialization": "Software Engineering",
+        "sex": "Male"
+    },
+    {
+        "id": 3,
+        "name": "Jhomer",
+        "employeeId": "EMP003",
+        "department": "BSEE",
+        "specialization": "Electrical Engineering",
+        "sex": "Male"
+    },
+    {
+        "id": 4,
+        "name": "Mark",
+        "employeeId": "EMP004",
+        "department": "BSN",
+        "specialization": "Nursing",
+        "sex": "Male"
+    },
+    {
+        "id": 5,
+        "name": "Peter",
+        "employeeId": "EMP005",
+        "department": "BSOA",
+        "specialization": "Business Administration",
+        "sex": "Male"
+    }
+]

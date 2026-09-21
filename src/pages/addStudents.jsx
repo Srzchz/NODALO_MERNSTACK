@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import studentData from "../data/students.json";
 
 export default function AddStudents() {
@@ -30,6 +31,8 @@ export default function AddStudents() {
                     setSex("");
                     setCourse("");
                     setCourseDescription("");
+
+                    navigate("/student");
                 }}
             >
                 <div className="mb-4">
@@ -108,15 +111,6 @@ export default function AddStudents() {
                     </button>
                 </div>
             </form>
-            {students.map((student) => (
-                <div key={student.id} className="bg-gray-300 shadow-md rounded-lg p-4 m-4 max-w-sm mx-auto">
-                    <h2 className="text-xl font-semibold mb-2">{student.name}</h2>
-                    <p className="text-gray-600 mb-1">Age: {student.age}</p>
-                    <p className="text-gray-600 mb-1">Sex: {student.sex}</p>
-                    <p className="text-gray-600 mb-1">Course: {student.course}</p>
-                    <p className="text-gray-600 mb-1">Course Description: {student.courseDescription}</p>
-                </div>
-            ))}
         </div>
     );
 }
